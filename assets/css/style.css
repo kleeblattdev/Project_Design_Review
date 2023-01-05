@@ -5,8 +5,8 @@
 /* font-family
 font-family: 'Graphik Regular';
 font-family: 'Graphik Medium';
-font-family: 'Teinhardt';
-font-family: 'TiemposHeadline';
+font-family: 'Teinhardt-Lt';
+font-family: 'TiemposHeadline-Semibold';
  */
 
 @font-face {
@@ -16,23 +16,278 @@ font-family: 'TiemposHeadline';
 
 @font-face {
     font-family: 'Graphik Medium';
-    src: url(../fonts/Graphik/Graphik-Medium.woff);
+    src: url(../fonts/Graphik/Graphik-Medium.ttf);
 }
 
 @font-face {
-    font-family: 'Tienhardt';
-    src: url(../fonts/Tienhardt/Tienhardt-Regular.woff);
+    font-family: 'Teinhardt-Lt';
+    src: url(../fonts/Teinhardt/Theinhardt-Lt.woff);
 }
 
 @font-face {
-    font-family: 'TiemposHeadline';
+    font-family: 'TiemposHeadline-Semibold';
     src: url(../fonts/TiemposHeadline/TiemposHeadline-Semibold.woff);
 }
 
-/* GLOBAL STYLES */
+/* =================== GLOBAL STYLES ==================== */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    max-width: 1440px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a, h2 {
+    font-family: 'Graphik Regular';
+}
+
+button, h4, h5, .introText, .mail {
+    font-family: 'Graphik Medium';
+}
+
+h1, h3{
+    font-family: 'TiemposHeadline-Semibold';
+}
+
+p, li{
+    font-family: 'Teinhardt-Lt';
+}
+
+h3{
+    font-size: 2.8rem;
+    color: #27282A;
+}
+
+h4{
+    font-size: 1.3rem;
+    color: #27282A;
+}
+
+/* ================== HEADER STYLE =======================*/
+
+header{
+    height: 90vh;
+    background-image: url(../images/home_hero.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+
+/* NAVBAR STYLE */
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    color: #27282A;
+}
+
+.navLinks{
+    margin-left: 8vw;
+}
+
+.navLinks a{
+    color: #27282A;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+h1{
+    margin-right: 10%;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+
+/* BUTTON STYLE */
+
+button{
+    color: #2B2C2E;
+    background-color: #fff;
+    font-size: rem;
+    margin-right: 10vw;
+    border: 2px solid #27282A;
+    border-radius: 5px;
+    padding: 8px 50px;
+}
+
+button:hover{
+    background-color: #27282A;
+    color: #fff;
+/* HIER MUSS NOCH EIN DELAY HIN!!!!! */
+}
+
+/* ================= MAIN STYLE =========================*/
+
+main{
+    margin: 15vh 8vw;
+    border-bottom: 1px solid #848689;
+}
+
+
+/* INTRO STYLE */
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    color: #2B2C2E;
+    margin-bottom: 10vh;
+}
+
+.introText{
+    width: 50vw;
+    line-height: 1.4em;
+}
+
+.flat{
+    margin-right: 15%;
+}
+
+.price{
+    font-size: 3rem;
+}
+
+.flatrate{
+    color: #9FA2A7;
+    width: 14vw;
+}
+
+
+/* DELIVERABLES STYLE */
+
+.deliverables{
+    background: no-repeat url(../images/home_deliverables.png) left;
+    background-size: 40%;
+    margin-bottom: 10vh;
+}
+
+.delText{
+    margin-left: 50%;
+}
+
+.delText *{
+    margin-bottom: 3vh;
+}
+
+.delText p{
+    color:#9FA2A7;
+}
+
+/* ABOUT STYLE */
+
+.about{
+    background-color: #f1f1f4;
+    margin-bottom: 10vh;
+    padding: 0 5vw 8vh;
+}
+
+.aboutTexT{
+    background: no-repeat url(../images/home_how_it_works.png) top right;
+    background-size: 50%;
+}
+
+.aboutTexT h3:first-of-type{
+    padding: 5vh 0 2vh;
+}
+
+.aboutTexT h3:last-of-type{
+    padding: 2vh 0;
+}
+
+.aboutTexT ol{
+    width: 30vw;
+    margin-left: 2vw;
+}
+
+.aboutTexT p, li{
+    color: #9FA2A7;
+}
+
+.aboutTexT p{
+    width: 30vw;
+}
+
+/* CRITIQUE STYLE */
+
+.critique{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.critique h3{
+    padding: 25px;
+}
+
+.critique p{
+    color:#9FA2A7;
+    width: 40vw;
+    line-height: 1.8em;
+    margin: auto;
+}
+
+
+/* CONVERSION STYLE */
+
+.conversion{
+    height: 60vh;
+    background:no-repeat url(../images/28.png) top center;
+    margin-bottom: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+h5{
+    color: #9FA2A7;
+    font-size: 1.3rem;
+    line-height: 2em;
+    width: 30vw;
+    padding-top: 26vh;
+    margin: 10vh 0 10vh;
+}
+
+.conversionImg{
+    width: 50%;
+    background: no-repeat url(../images/home_conversion.png) right bottom;
+    background-size: 90%;
+}
+
+/* ================ FOOTER STYLE ======================== */
+
+footer{
+    text-align: center;
+    color: #9FA2A7;
+    margin-bottom: 10vh;
+}
+
+.mail{
+    background: no-repeat url(../images/costume_guy.png);
+    background-size: 7%;
+    background-position: left 35vw bottom;
+    padding-top: 20vh;
+    font-size: 0.8rem;
+}
+
+.mailColor{
+    color: #27282A;
+}
+
+/* ================== MEDIA QUERIES ================ */
