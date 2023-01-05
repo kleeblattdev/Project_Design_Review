@@ -71,6 +71,10 @@ h4{
     color: #27282A;
 }
 
+p{
+    font-size: 1.2rem;
+}
+
 /* ================== HEADER STYLE =======================*/
 
 header{
@@ -113,17 +117,11 @@ h1{
     margin-right: 10%;
 }
 
-p{
-    font-size: 1.2rem;
-}
-
-
 /* BUTTON STYLE */
 
 button{
     color: #2B2C2E;
     background-color: #fff;
-    font-size: rem;
     margin-right: 10vw;
     border: 2px solid #27282A;
     border-radius: 5px;
@@ -290,4 +288,124 @@ footer{
     color: #27282A;
 }
 
-/* ================== MEDIA QUERIES ================ */
+/* ================== MEDIA QUERIES FOR 576px================ */
+
+@media only screen and (max-width:576px){
+
+    h3{
+        font-size: 2rem;
+    }
+
+    h4{
+        font-size: 1rem;
+    }
+
+    p, li{
+        font-size: 0.8rem;
+    }
+
+/* ================== HEADER 576px ========================= */
+
+header{
+    height: 50vh;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+/* NAVBAR STYLE 576px - Hätte lieber eine Hamburgernavigation */ 
+
+nav{
+    padding: 5px;
+}
+.navLinks{
+    margin-left: 2vw;
+}
+
+.navLinks a{
+    padding: 10px;
+    margin-right: 0;
+}
+
+button{
+    margin-right: 2vw;
+}
+
+/* ================= MAIN 576px =========================*/
+
+main{
+    margin: 5vh 4vw;
+}
+
+
+/* INTRO STYLE */
+
+.introText{
+    width: 55vw;
+}
+
+.flat{
+    margin-right: 2vw;
+}
+
+.flatrate{
+    width: 25vw;
+}
+
+
+/* DELIVERABLES STYLE 576px*/
+
+.deliverables{
+    background-size: 50%;
+}
+
+/* ABOUT STYLE  576px */
+
+.aboutTexT{
+    background-position: center right ;
+    background-size: 60%;
+    line-height: 1.3em;
+}
+
+.aboutTexT ol{
+    width: 30vw;
+    margin-left: 2vw;
+}
+
+
+/* CRITIQUE STYLE  576px*/
+
+.critique p{
+    width: 70vw;
+}
+
+
+/* CONVERSION STYLE  576px*/
+
+.conversion{
+    height: 35vh;
+    background-size: contain;
+    margin-bottom: 0;
+}
+
+h5{
+    font-size: 1rem;
+    line-height: 1.5em;
+    width: 50vw;
+    padding-top: 4vh;
+}
+
+.conversionImg{
+    width: 70%;
+    background-position: center;
+}
+
+/* FOOTER STYLE 576px */
+
+.mail{
+    background-size: 15%;
+    background-position: left 15vw bottom;
+}
+
+}
