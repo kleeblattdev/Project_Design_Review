@@ -129,7 +129,13 @@ button{
     transition: 1.5s;
 }
 
-button:hover{
+/*  Button on hovering
+    button:hover{
+    color: #fff;
+    background-color: #27282A;
+} */
+
+.grayBG{
     color: #fff;
     background-color: #27282A;
 }
