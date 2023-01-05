@@ -363,22 +363,36 @@ main{
 /* DELIVERABLES STYLE 576px*/
 
 .deliverables{
-    background-size: 50%;
+    background-size: 45%;
+    background-position: top;
+}
+
+.delText{
+    margin: 0;
+    padding-top: 35vh;
+}
+
+.delText *{
+    margin-bottom: 2vh;
+
 }
 
 /* ABOUT STYLE  576px */
 
+.about{
+    padding-bottom: 2vh;
+}
+
 .aboutTexT{
-    background-position: center right ;
+    background-position: bottom ;
     background-size: 60%;
     line-height: 1.3em;
+    padding-bottom: 30vh;
 }
 
-.aboutTexT ol{
-    width: 30vw;
-    margin-left: 2vw;
+.aboutTexT p{
+    width: 70vw;
 }
-
 
 /* CRITIQUE STYLE  576px*/
 
@@ -400,18 +414,22 @@ h5{
     line-height: 1.5em;
     width: 50vw;
     padding-top: 4vh;
+    margin-left: 6vw;
 }
 
 .conversionImg{
-    width: 70%;
+    width: 80%;
     background-position: center;
 }
 
 /* FOOTER STYLE 576px */
 
+footer{
+    margin-bottom: 2vh;
+}
 .mail{
     background-size: 15%;
-    background-position: left 15vw bottom;
+    background-position: center;
 }
 
 }
